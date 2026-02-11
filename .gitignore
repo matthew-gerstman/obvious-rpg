@@ -1,24 +1,46 @@
-# OS
+# === ROM Files (NEVER commit these) ===
+*.smc
+*.sfc
+*.fig
+*.swc
+*.bin
+*.rom
+*.srm
+*.sav
+*.ips
+# Keep .ips in patches/ via .gitkeep exception below
+# BPS patches ARE committed (they're the distribution format)
+
+# === Build Output ===
+build/
+output/
+*.patched.*
+
+# === OS ===
 .DS_Store
 Thumbs.db
 
-# IDE
+# === IDE ===
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# Dependencies
+# === Dependencies ===
 node_modules/
 __pycache__/
 *.pyc
+.venv/
+venv/
 
-# Build
+# === Build Artifacts ===
 dist/
-build/
 *.o
 *.so
 
-# Environment
+# === Environment ===
 .env
 .env.local
+
+# === Wine ===
+.wine/
